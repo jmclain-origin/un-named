@@ -5,7 +5,7 @@ export default function Navbar() {
   const scrollPosition = useScrollPosition();
   const parentClass = scrollPosition > 0 ? "bg-base-300 border-b border-b-accent" : "bg-transparent"
   return (
-    <nav className={`navbar fixed top-0 ${parentClass}`}>
+    <nav className={`navbar fixed top-0 z-10 ${parentClass}`}>
       <div className="container mx-auto flex flex-row">
 
       <div className="flex-1">
